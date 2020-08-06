@@ -1,6 +1,8 @@
 # August_leetcode_challenge
 This repository will have all my solutions to leetcode august challenge.
 
+# Leetcode profile : https://leetcode.com/webdeveloper13/
+
 # WEEK 1
 
 Day 1: Detect Capital
