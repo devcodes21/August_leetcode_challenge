@@ -54,6 +54,36 @@ Each node's value will be between 0 and 1000.
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+/*Approach
+Used DFS here to traverse the array.
+So while doing dfs we push the nodes to a vector with a data type called point
+which we have made and the struct contains x (horizontal distance) y (vertical distance) 
+and val which is node value;
+
+So if we keep the root as the reference for horizontal distance then x = 0 for root
+and if we move left x = x-1 and if we move right x = x+1
+Similarly y = 0 for root and as we traverse down y is going to decrease anyway
+so y = y-1 at each level;
+
+Now after now we perform dfs and fill our vector..
+Now we need to sort it;
+For sorting we need to follow guidelines given in the question which says
+
+1. if x(horizontal distance) for two nodes are same then check for their y and one with more y will come first
+
+2. if y (vertical distance) for two nodes are same then check for the node values the node with less value should come first.
+
+So this purpose can be solved with the following sorting comparator.
+
+sort(cord.begin(),cord.end(),[](point a,point b){
+                    return a.x==b.x ? a.y==b.y ? a.val<b.val : a.y>b.y: a.x<b.x;
+            });
+
+So now that cord is sorted we can push the nodes with same x value to a same row in ans;            
+*/
+
+
 class Solution {
 public:
     struct point
