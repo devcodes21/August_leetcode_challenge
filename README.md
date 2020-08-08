@@ -19,6 +19,11 @@ Day 6: Find All Duplicates in an Array
 
 Day 7: Vertical Order Traversal of a Binary Tree
 
+# WEEK 2
+
+Day 8: Path Sum III
+
+
 
 
 
