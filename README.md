@@ -45,10 +45,8 @@ Day 18:Numbers With Same Consecutive Differences
 
 Day 19: Goat Latin
 
+Day 20: Reorder List
 
+Day 21:Sort Array By Parity
 
-
-
-
-
-
+# WEEK 4
